@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title>Javascript Converter: Millimeter convert</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+	<center><h1>Millimeter to Centimeter</h1></center>
+	 <form>
+        <input type="number" id="milInput" class="form-control" name="milInput"><br>
+        <center><button type="button" class="btn btn-danger" onclick="convertToSec()">Convert to Centimeters</button>
+      </form>  
+      <br>
+      <p id="cenOutput"></p>
+    <script>
+      function convertToSec() {
+        var mil = document.getElementById('milInput').value;
+        var division = mil / 10;
+        document.getElementById('cenOutput').innerHTML = division + ' cm';
+      }
+  </script>
+<br><br>
+	<h1>Millimeter to Meter</h1>
+	<form>
+      <input type="number" id="mil2Input" class="form-control" name="mil2Input"><br>
+       <center><button type="button" class="btn btn-warning" onclick="convertToHour()">Convert to Hours</button></center>
+      </form>  
+      <br>
+      <p id="metOutput"></p>
+    <script>
+      function convertToHour() {
+        var mil2 = document.getElementById('mil2Input').value;
+        var division = mil2 / 1000;
+        document.getElementById('metOutput').innerHTML = division + ' m';
+      }
+  </script>
+  <br><br>
+	<h1>Millimeter to Kilometer</h1>
+	<form>
+      <input type="number" id="mil3Input" class="form-control" name="mil3Input"><br>
+       <center><button type="button" class="btn btn-primary" onclick="convertToDay()">Convert to Days</button></center>
+      </form>  
+      <br>
+      <p id="kiloOutput"></p>
+    <script>
+      function convertToDay() {
+        var mil3 = document.getElementById('mil3Input').value;
+        var division = mil3 / 1000000;
+        document.getElementById('kiloOutput').innerHTML = division + ' km';
+      }
+  </script> 
+</body>
+</html>
